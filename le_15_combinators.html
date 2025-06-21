@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            position: relative;
+        }
+       section .heading{
+            border: 2px solid black;
+            padding: 5px;
+            background-color: lightcoral;
+        }
+        section .heading h1{
+            text-align: center;
+            color: white;
+        }
+        .heading + .gallery{
+            width: 100%;
+            padding: 10px;
+        }
+        .gallery > .gallery_image{
+            border: 2px solid black;
+            width: 23%;
+            display: inline-block;
+        }
+        .gallery > .gallery_image > img{
+            width: 100%;
+        }
+       section .tpara ~ p{
+            background-color: green;
+            border: 2px solid black;
+            margin: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <!-- 
+    Descendant combinator (space)
+    Child combinator (>)
+    Next sibling combinator (+)
+    Subsequent-sibling combinator (~) 
+    -->
+
+    <section>
+        <div class="heading">
+            <h1>Gallery</h1>
+        </div>
+        <div class="gallery">
+            <div class="gallery_image">
+                <img src="image/html.png" alt="">
+            </div>
+            <div class="gallery_image">
+                <img src="image/html.png" alt="">
+            </div>
+            <div class="gallery_image">
+                <img src="image/html.png" alt="">
+            </div>
+            <div class="gallery_image">
+                <img src="image/html.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+   <section>
+        <div class="tpara">Div</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum maxime consequuntur, eum odio unde quaerat nesciunt, porro officiis, dolore doloribus. Iure unde ratione id eius nam officia. Tempore, officia.</p>
+   </section>
+
+</body>
+</html>

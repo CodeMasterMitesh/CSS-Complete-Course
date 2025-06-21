@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text CSS Property</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nosifer&display=swap" rel="stylesheet">
+        
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body{
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* font-family:'Times New Roman', Times, serif; */
+            font-family: 'Courier New', Courier, monospace;
+            /* font-family:cursive; */
+            font-size: 18px;
+
+            /* 1em = 16px */
+        }
+        h1{
+            background-color: lightcyan;
+            color: rgb(104, 47, 5);
+            margin-bottom: 50px;
+            padding: 5px;
+            text-align: center;
+            /* font-family: "Cedarville Cursive", cursive;
+            font-weight: 400;
+            font-style: normal; */
+            font-size: 15px;
+        }
+        .box{
+            font-family: "Nosifer", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: 5px solid green;
+            width: 450px;
+            height: 450px;
+            /* margin:auto; */
+            padding: 10px;
+            background-color: aqua;
+            /* outline-style: dashed; */
+            /* outline-style:ridge;
+            outline-width: 10px;
+            outline-color: rgb(255, 234, 2);*/
+            outline:15px ridge rgb(220, 38, 38); 
+            outline-offset: 1px;
+            text-align: justify;
+            margin: 50px;
+            /* text-align-last: justify; */
+            /* text-transform: lowercase; */
+            /* text-transform: uppercase; */
+            text-transform: capitalize;
+            text-indent: 25px;
+            letter-spacing: 2px;
+            word-spacing: 0px;
+            white-space:normal;
+            text-shadow: 3px 2px 2px #ff0808;
+        }
+        .box1{
+            border: 5px solid green;
+            width: 350px;
+            height: 350px;
+            /* margin:auto; */
+            padding: 10px;
+            line-height: 350px;
+            text-align: center;
+        }
+        .odd{
+            color: red;
+            font-size: 45px;
+        }
+        .even{
+            color: rgb(55, 255, 0);
+        }
+        .para{
+            /* direction: rtl;
+            unicode-bidi: bidi-override; */
+            /* text-decoration-line: underline; */
+            /* text-decoration-line: overline; */
+            /* text-decoration-line: line-through; */
+            /* text-decoration-color: red;
+            text-decoration-style:wavy;
+            text-decoration-thickness: 3px; */
+
+            text-decoration: wavy underline 2px red;
+        }   
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><span class="odd">O</span><span class="even">U</span><span class="odd">T</span><span class="even">L</span><span class="odd">I</span><span class="even">N</span><span class="odd">E</span> CSS PROPERTY</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde officia expedita deserunt rem aspernatur illum quos inventore, quo odio fugit recusandae ipsa aliquam? Delectus illum quisquam qui dolorum voluptatum nulla.</p>
+    <hr>
+    <a href="https://codemastermitesh.com">CodeMasterMitesh</a>
+    <div class="box">
+        <img src="image/html.png" alt="">
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quisquam nemo eum laudantium cupiditate odit, nobis expedita. Commodi, quo pariatur delectus consequuntur, maxime nesciunt voluptate cupiditate ut quae illum beatae.</p> -->
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Quibusdam quisquam nemo eum laudantium cupiditate odit, 
+            nobis expedita. Commodi, quo pariatur delectus consequuntur, 
+            maxime nesciunt voluptate cupiditate ut quae illum beatae.</p>
+    </div>
+    <div class="box1">
+        <p>CodeMasterMitesh</p>
+    </div>
+
+
+</body>
+</html>

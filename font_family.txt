@@ -1,0 +1,41 @@
+font generic ;
+1) Serif
+2) Sans-serif
+3) Monospace
+4) Cursive
+5) Fantasy
+
+Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+Cursive fonts imitate human handwriting.
+Fantasy fonts are decorative/playful fonts.
+
+ex.
+
+Serif	Times New Roman
+Georgia
+Garamond
+Sans-serif	Arial
+Verdana
+Helvetica
+Monospace	Courier New
+Lucida Console
+Monaco
+Cursive	Brush Script MT
+Lucida Handwriting
+Fantasy	Copperplate
+Papyrus
+
+Best Web Safe Fonts for HTML and CSS
+The following list are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)

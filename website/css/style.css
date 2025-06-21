@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+section{
+    position: relative;
+    width: 1170px;
+    margin: auto;
+    margin-top: 150px;
+}
+/* nav bar css  */
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-shadow: -2px 0px 3px 2px #cdbfbf;
+    background-color: white;
+}
+.logo{
+    width: 25%;
+}
+.menu{
+    width: 75%;
+}
+.menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul li{
+    margin: 10px;
+    padding: 5px;
+    transition: all 1s linear;
+    a{
+        color: rgb(70, 68, 68);
+    }
+    /* color: ; */
+}
+.menu ul li:hover{
+    background-color: rgb(1, 33, 128);
+    a{
+        color:white;
+    }
+}
+/* navbar css end */
+/* hero area css start */
+
+.hero_area{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top:50px;
+    background-image: url("../images/img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_area::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(84, 109, 174, 0.56);
+}
+.hero_area .hero_text {
+    z-index: 111;
+}
+.hero_area .hero_text h1{
+    text-align: center;
+    color: rgb(241, 238, 238);
+    font-size: 46px;
+}
+.hero_area .hero_text p{
+    text-align: center;
+    color: rgb(241, 238, 238);
+    font-size: 30px;
+}
+
+/* hero area css end */
+/* edu_service area css start */
+
+.edu_service{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.edu_service .inner_box{
+    position: relative;
+    width: 250px;
+    height: 280px;
+    background-color: rgb(242, 237, 237);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.inner_text{
+    position: absolute;
+    top: 110px;
+}
+.edu_service .img1::before{
+    content: url('../images/1.png');
+    position: absolute;
+    top: -57px;
+    left: 65px;
+}
+.edu_service .img2::before{
+    content: url('../images/2.png');
+    position: absolute;
+    top: -57px;
+    left: 65px;
+    
+}
+
+.edu_service .img3::before{
+    content: url('../images/3.png');
+    position: absolute;
+    top: -57px;
+    left: 65px;
+    
+}
+
+.edu_service .img4::before{
+    content: url('../images/4.png');
+    position: absolute;
+    top: -57px;
+    left: 65px;
+    
+}

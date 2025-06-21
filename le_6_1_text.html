@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text CSS Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            background-color: lightcyan;
+            color: rgb(104, 47, 5);
+            margin-bottom: 50px;
+            padding: 5px;
+            text-align: center;
+        }
+        .box{
+            border: 5px solid green;
+            width: 350px;
+            height: 350px;
+            /* margin:auto; */
+            padding: 10px;
+            background-color: aqua;
+            /* outline-style: dashed; */
+            /* outline-style:ridge;
+            outline-width: 10px;
+            outline-color: rgb(255, 234, 2);*/
+            outline:15px ridge rgb(220, 38, 38); 
+            outline-offset: 1px;
+            text-align: justify;
+            margin: 50px;
+            text-align-last: justify;
+            /* text-transform: lowercase; */
+            /* text-transform: uppercase; */
+            text-transform: capitalize;
+        }
+        .odd{
+            color: red;
+            font-size: 45px;
+        }
+        .even{
+            color: rgb(55, 255, 0);
+        }
+        .para{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }   
+    </style>
+</head>
+<body>
+    <h1><span class="odd">O</span><span class="even">U</span><span class="odd">T</span><span class="even">L</span><span class="odd">I</span><span class="even">N</span><span class="odd">E</span> CSS PROPERTY</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde officia expedita deserunt rem aspernatur illum quos inventore, quo odio fugit recusandae ipsa aliquam? Delectus illum quisquam qui dolorum voluptatum nulla.</p>
+
+    <div class="box">
+        <img src="image/html.png" alt="">
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quisquam nemo eum laudantium cupiditate odit, nobis expedita. Commodi, quo pariatur delectus consequuntur, maxime nesciunt voluptate cupiditate ut quae illum beatae.</p> -->
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quisquam nemo eum laudantium cupiditate odit, nobis expedita. Commodi, quo pariatur delectus consequuntur, maxime nesciunt voluptate cupiditate ut quae illum beatae.</p>
+    </div>
+
+</body>
+</html>

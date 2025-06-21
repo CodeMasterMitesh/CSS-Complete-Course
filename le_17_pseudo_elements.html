@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <script src="https://kit.fontawesome.com/5c8cf8f3fa.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        body{
+            background-color: lightblue;
+        }
+        p::selection{
+            background-color: red;
+            color: yellow;
+        }
+        p{
+            width: 500px;
+            margin: 20px;
+            padding: 10px;
+            height: 400px;
+            background-color: rgb(11, 51, 50);
+            border: 2px solid black;
+            overflow: auto;
+            color: white;
+        }
+        p::before{
+            content: url('image/html.png');
+        }
+        p::first-line{
+            background-color: red;
+        }
+        p::first-letter{
+            font-size: 60px;
+        }
+        ul{
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            height: 200px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            list-style-position: inside;
+        }
+        ::marker{
+            color: brown;
+        }
+        li::after{
+            content: ' - Is Hot';
+        }
+        li::before{
+            content: '\f6c8';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: white;
+            display: inline-block;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+<h1>Pseudo Elements Css Property</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quibusdam, blanditiis ad ut itaque amet nostrum obcaecati asperiores explicabo saepe. Labore tempore harum nam eligendi officia officiis quasi necessitatibus atque?
+    dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</p>
+
+<ul>
+    <li>
+        <!-- before  -->
+        Milk
+
+        <!-- after  -->
+    </li>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Bear</li>
+</ul>
+<!-- 
+::after
+::before
+::first-letter
+::first-line
+::marker
+::selection 
+-->
+
+
+</body>
+</html>

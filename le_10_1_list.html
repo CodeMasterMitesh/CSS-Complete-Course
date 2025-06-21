@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST IN CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .menu{
+            width: 150px;
+            height: 300px;
+            background-color: rgb(37, 16, 1);
+            padding: 10px;
+        }
+        .menu li{
+            width: 100%;
+            /* background-color: white; */
+            display: inline-block;
+        }
+        .menu li a{
+            color: white;
+        }
+        ol{
+            padding: 10px;
+            width: 300px;
+            background-color: tomato;
+            /* list-style-type:upper-roman; */
+            /* list-style-type:lower-roman;
+            list-style-position: inside; */
+            list-style-type: none;
+        }
+        ol li{
+            background-color: yellow;
+            padding: 5px;
+            margin: 5px;
+        }
+        ul{
+            width: 200px;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            background-color: royalblue;
+            list-style-position: inside;
+            /* list-style-type:circle; */
+            /* list-style-type:square; */
+            list-style-type:circle;
+            line-height: 25px;
+        }
+        ul li{
+            width: 100%;
+            /* background-color: red; */
+            /* padding: 5px; */
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Aparimita IT Solution</h1>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <h1>LIST IN CSS</h1>
+    <p>List Of Fruite</p>
+    <ol>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ol>
+
+    <p>Unorder List</p>
+    <ul>
+        <li>Milk</li>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Soda</li>
+        <li>Water</li>
+    </ul>
+</body>
+</html>

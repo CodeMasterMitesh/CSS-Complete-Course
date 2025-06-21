@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            align-items: stretch;
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: center; */
+            /* justify-content:center; */
+            /* justify-content:space-between; */
+            /* justify-content:space-around; */
+            /* justify-content:center; */
+            /* justify-content:flex-start; */
+            /* justify-content:flex-end; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            color:white;
+        }
+        .bg{
+            background-color: brown;
+        }
+        .bg1{
+            background-color: rgb(42, 144, 165);
+        }
+        .bg2{
+            background-color: rgb(68, 12, 73);
+        }
+        .bg3{
+            background-color: rgb(141, 76, 2);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box bg">
+             Box 1
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora veritatis rerum, necessitatibus modi numquam, laborum, amet quos facilis eos aut mollitia sed maiores officiis impedit natus voluptatem ducimus porro.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora veritatis rerum, necessitatibus modi numquam, laborum, amet quos facilis eos aut mollitia sed maiores officiis impedit natus voluptatem ducimus porro.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora veritatis rerum, necessitatibus modi numquam, laborum, amet quos facilis eos aut mollitia sed maiores officiis impedit natus voluptatem ducimus porro. -->
+        </div>
+        <div class="box bg1">
+            Box 2
+        </div>
+        <div class="box bg2">
+            Box 3
+        </div>
+        <div class="box bg3">
+            Box 4
+        </div>
+         <!-- <div class="box bg3">
+            Box 4
+        </div>
+         <div class="box bg3">
+            Box 4
+        </div>
+         <div class="box bg3">
+            Box 4
+        </div>
+        <div class="box bg3">
+            Box 4
+        </div>
+        <div class="box bg3">
+            Box 4
+        </div> -->
+
+    </div>
+
+
+</body>
+</html>

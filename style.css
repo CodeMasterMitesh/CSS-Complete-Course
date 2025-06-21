@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+body{
+    background-color: lightcyan;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 300;
+    font-style :italic;
+}
+p{
+    background-color: tomato;
+    border: 2px solid black;
+}

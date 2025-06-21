@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient CSS Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-image: linear-gradient(red,green,blue); */
+            /* background-image: linear-gradient(to right ,red,green,blue); */
+            /* background-image: linear-gradient(to left ,red,green,blue); */
+            /* background-image: linear-gradient(to right bottom  ,red,green,blue); */
+            /* background-image: linear-gradient(to left top  ,rgb(246, 255, 0),rgb(63, 187, 221),rgba(255, 0, 238, 0.537)); */
+            /* background-image: linear-gradient(16deg,rgb(246, 255, 0),rgb(63, 187, 221),rgba(255, 0, 238, 0.537)); */
+            /* background-image: radial-gradient(rgb(74, 71, 255) , green,orange);
+            background-repeat: no-repeat; */
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+             /* background-image: linear-gradient(to right top  ,red,green,blue); */
+             /* background-image: radial-gradient(circle,rgb(74, 71, 255) 10%, green 20%,orange 50%); */
+             /* background-image: conic-gradient(red, yellow, green); */
+             background-image: conic-gradient( red 0deg, red 45deg, yellow 45deg,yellow 90deg, green 90deg,green 135deg,rgb(0, 126, 128) 135deg, rgb(0, 126, 128) 180deg, rgb(229, 128, 21) 180deg,rgb(229, 128, 21) 225deg,rgb(158, 58, 136) 225deg,rgb(158, 58, 136) 270deg,rgb(114, 14, 31) 270deg,rgb(114, 14, 31) 315deg,rgb(77, 245, 155) 315deg,rgb(77, 245, 155) 360deg);
+             border-radius: 50%;
+             margin: auto;
+             margin-top: 50px;
+             animation-name: rotate;
+             animation-duration: 2s;
+             animation-timing-function: linear;
+             animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            from{
+                transform: rotateZ(0deg);
+            }
+
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Gradient three 
+     1)linear Gradient
+     2)Radial Gradients
+     3)Conical Gradient 
+    -->
+
+    <div class="box">
+
+    </div>
+
+
+</body>
+</html>

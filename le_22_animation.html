@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition CSS Property</title>
+    <!-- ease	Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1))
+        linear	Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))
+        ease-in	Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))
+        ease-out	Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))
+        ease-in-out	Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1)) -->
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 2px solid black;
+            background-color: yellow;
+            animation-name: basic;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+        }
+        @keyframes basic{
+            from{
+                background-color: rgb(0, 255, 225);
+                transform: rotate(0deg);
+            }
+            to{
+                background-color: rgb(0, 255, 42);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Transition CSS Property</h1>
+
+    <div class="box">
+        Transition
+    </div>
+    
+</body>
+</html>
