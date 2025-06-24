@@ -13,7 +13,8 @@ section{
     position: relative;
     width: 1170px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 60px;
+    z-index: -111;
 }
 /* nav bar css  */
 nav{
@@ -100,8 +101,9 @@ nav{
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-top: 150px;
 }
-.edu_service .inner_box{
+.edu_service .box{
     position: relative;
     width: 250px;
     height: 280px;
@@ -109,6 +111,11 @@ nav{
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    z-index: -1111;
+}
+.edu_service .inner_box{
+   width: 100%;
+   position: relative;
 }
 .inner_text{
     position: absolute;
@@ -118,13 +125,13 @@ nav{
     content: url('../images/1.png');
     position: absolute;
     top: -57px;
-    left: 58px;
+    left: 45px;
 }
 .edu_service .img2::before{
     content: url('../images/2.png');
     position: absolute;
     top: -57px;
-    left: 58px;
+    left: 45px;
     
 }
 
@@ -132,14 +139,14 @@ nav{
     content: url('../images/3.png');
     position: absolute;
     top: -57px;
-    left: 58px;   
+    left: 45px;   
 }
 
 .edu_service .img4::before{
     content: url('../images/4.png');
     position: absolute;
     top: -57px;
-    left: 58px;   
+    left: 45px;   
 }
 .edu_service .box .inner_box p{
     font-size: 14px;
@@ -154,7 +161,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.course .heading h1{
+.course .heading .h1{
     font-size: 38px;
 }
 .course .course_area{
@@ -162,4 +169,30 @@ nav{
     justify-content: space-between;
     margin-top: 20px;
     line-height: 25px;
+}
+
+/* about us css  */
+.aboutus{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus_text{
+    width: 70%;
+}
+.aboutus_text .h1,.upcommimg_course .h1{
+    margin-bottom: 15px;
+}
+.aboutus_text p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.upcommimg_course{
+    width: 25%;
+    text-align: left;
+}
+
+.upcommimg_course a{
+    display: block;
+    margin-bottom: 15px;
 }
