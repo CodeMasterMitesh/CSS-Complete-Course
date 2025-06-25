@@ -9,6 +9,12 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
 }
+footer{
+    position: relative;
+    width: 100%;
+    z-index: -111;
+    background-color: rgb(201, 192, 192);
+}
 section{
     position: relative;
     width: 1170px;
@@ -195,4 +201,32 @@ nav{
 .upcommimg_course a{
     display: block;
     margin-bottom: 15px;
+    color: black;
+}
+
+/* footer css start  */
+.top_footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.top_footer .main_top{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_footer .social_media{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_footer .social_media ul li{
+    display: inline-block;
 }
