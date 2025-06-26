@@ -22,6 +22,10 @@ section{
     margin-top: 60px;
     z-index: -111;
 }
+.section{
+    position: relative;
+    width: 1170px;
+}
 /* nav bar css  */
 nav{
     width: 100%;
@@ -218,10 +222,22 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    line-height: 30px;
+}
+.top_footer .main_top > div{
+    width: 25%;
+}
+.top_footer .main_top .course_category ul li,.top_footer .main_top .product_category ul li
+,.top_footer .main_top .browse_category ul li,.top_footer .main_top .contact_details ul li{
+    display: flex;
+    flex-direction: column;
+}
+.top_footer .main_top ul li a{
+    color: rgb(0, 0, 0);
 }
 
 .top_footer .social_media{
-    position: relative;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -229,4 +245,40 @@ nav{
 }
 .top_footer .social_media ul li{
     display: inline-block;
+    margin: 10px;
+}
+.top_footer .social_media ul li a{
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(78, 78, 75);
+}
+.bottom_footer{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.bottom_footer .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom_footer .section .footer_menu{
+    width: 50%;
+}
+.bottom_footer .section .footer_menu ul{
+    width: 100%;
+}
+.bottom_footer .section .footer_menu ul li{
+    display: inline-block;
+}
+.bottom_footer .section .copy_right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bottom_footer .section .copy_right p,a{
+    color: white;
 }
