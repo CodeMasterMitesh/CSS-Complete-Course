@@ -12,19 +12,28 @@ body{
 footer{
     position: relative;
     width: 100%;
-    z-index: -111;
     background-color: rgb(201, 192, 192);
+    z-index: 1;
 }
 section{
     position: relative;
     width: 1170px;
     margin: auto;
     margin-top: 60px;
-    z-index: -111;
 }
 .section{
     position: relative;
     width: 1170px;
+}
+header{
+    position: relative;
+    top:60px;
+    width: 100%;
+    background-color: #3d84e6;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* nav bar css  */
 nav{
@@ -37,6 +46,7 @@ nav{
     padding-right: 25px;
     box-shadow: -2px 0px 3px 2px #cdbfbf;
     background-color: white;
+    z-index: 11111;
 }
 .logo{
     width: 25%;
@@ -56,7 +66,6 @@ nav{
     a{
         color: rgb(70, 68, 68);
     }
-    /* color: ; */
 }
 .menu ul li:hover{
     background-color: rgb(1, 33, 128);
@@ -272,6 +281,9 @@ nav{
 }
 .bottom_footer .section .footer_menu ul li{
     display: inline-block;
+    margin-right: 10px;
+    padding-right:10px ;
+    border-right: 2px solid white;
 }
 .bottom_footer .section .copy_right{
     width: 50%;
@@ -281,4 +293,62 @@ nav{
 }
 .bottom_footer .section .copy_right p,a{
     color: white;
+}
+
+header .head{
+    width: 100%;
+}
+header .head h1,header .head  p{
+    text-align: center;
+    color:white;
+}
+
+
+
+/* conatct page css  */
+
+.inqury_form{
+    position: relative;
+    width: 100%;
+    line-height: 25px;
+    z-index: 1111111111111;
+}
+.inqury_form .inner_inquiry_form{
+    position: relative;
+    width: 100%;
+    top: 50px;
+}
+.inqury_form .inner_inquiry_form h1{
+    margin-bottom: 20px;
+}
+.inqury_form .inner_inquiry_form form{
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inqury_form .inner_inquiry_form form input[type="text"],
+.inqury_form .inner_inquiry_form form input[type="email"],
+.inqury_form .inner_inquiry_form form textarea{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(230, 223, 223);
+}  
+
+.inqury_form .inner_inquiry_form form .btn{
+    width: 100px;
+}
+.inqury_form .inner_inquiry_form form .btn input{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(218, 207, 207);
+}
+
+
+.map{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    position: relative;
+    top: 50px;
 }
