@@ -1,0 +1,70 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_area .hero_text h1 {
+        font-size: 26px;
+    }
+    .hero_area .hero_text p{
+        font-size: 18px;
+    }
+    .logo{
+        text-align: center;
+        width: 150px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .menu ul{
+        justify-content: center;
+    }
+    .menu ul li{
+        margin: 3px;
+    }
+    .menu ul li a{
+        font-size: 16px;
+    }
+
+    .edu_service,.course_area,.aboutus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .edu_service{
+        margin-top: 120px;
+        padding: 20px;
+    }
+    .edu_service .box{
+        width : 100%;
+        margin-bottom: 60px;
+    }
+    .edu_service .img1::before,
+    .edu_service .img2::before,
+    .edu_service .img3::before,
+    .edu_service .img4::before{
+        left:120px;
+    }
+    .top_footer .main_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
