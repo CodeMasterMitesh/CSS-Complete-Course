@@ -54,7 +54,40 @@
         display: flex;
         flex-direction: column;
     }
-
+    .course > *{
+        text-align: center;
+    }
+    .aboutus .aboutus_text{
+        text-align: center;
+    }   
+   .aboutus .aboutus_text,.upcommimg_course{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .upcommimg_course .h1{
+    text-align: center;
+   }
+   .top_footer{
+    padding-left: 30px;
+   }
+   .main_top > *{
+    width: 100%!important;
+    margin-bottom: 10px ;
+   }
+   .bottom_footer .footer{
+    flex-direction: column;
+   }
+   .bottom_footer .section .footer_menu{
+    width: 100%;
+   }
+   .bottom_footer .section .footer_menu ul li{
+    margin: 3px;
+   }
+   .bottom_footer .section .copy_right{
+    width: 100%;
+    flex-direction: column;
+   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
