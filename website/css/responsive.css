@@ -91,7 +91,47 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+    section{
+        width: 100%;
+    }
+    .edu_service{
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .edu_service .box{
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    .edu_service .img1::before,
+    .edu_service .img2::before,
+    .edu_service .img3::before,
+    .edu_service .img4::before{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .inner_text a{
+        color: black;
+    }
+    .course_area{
+        flex-direction: column;
+    }
+    .course_area .course_inner{
+        width: 100%;
+        text-align: center;
+    }
+    .course_area .course_inner .course_img{
+        width: 100%;
+        text-align: center;
+    }
+    .course_area .course_inner .course_img img{
+        width: 70%;
+    }
+    .course .heading{
+        text-align: center;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */
