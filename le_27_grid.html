@@ -14,10 +14,10 @@
             width: 100%;
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
-            grid-template-rows: 200px 200px 200px;
+            grid-template-rows: auto 200px 200px;
             /* column-gap: 25px;
             row-gap: 25px; */
-            gap: 10px;
+            /* gap: 10px; */
         }
         .box{
             /* width: 250px; */
@@ -27,13 +27,18 @@
         }
         .b1{
             background-color: blue;
-            grid-row-start: 2;
+            /* grid-row-start: 2;
             grid-row-end: 2;
             grid-column-start : 4;
-            grid-column-end : 4;
+            grid-column-end : 4; */
+            /* grid-row: 2 / 3;
+            grid-column: 4 / -1; */
+            /* grid-area: row start / column start / row end / column end; */
+            grid-area: 2 / 4 / 4 / -1;
         }
         .b2{
             background-color: rgb(182, 238, 27);
+            grid-area: 2 / 1 / 4 / 1;
         }
         .b3{
             background-color: rgb(146, 45, 92);
@@ -49,13 +54,17 @@
         }
         .b7{
             background-color: rgb(115, 158, 179);
+            grid-area: 4 / 1 / 4 / -1;
+            height: 50px;
         }
         .b8{
             background-color: rgb(230, 126, 28);
-            grid-row-start: 1;
+            /* grid-row-start: 1;
             grid-row-end: 1;
             grid-column-start : 1;
-            grid-column-end : 1;
+            grid-column-end : 1; */
+            grid-area: 1 / 1 / 1 / -1;
+            height: 50px;
         }
     </style>
 </head>
@@ -64,10 +73,10 @@
 
     <div class="container">
         <div class="box b1">
-            Box
+            Right Menu
         </div>
         <div class="box b2">
-            Box1
+            Menu
         </div>
         <div class="box b3">
             Box2
@@ -82,10 +91,10 @@
             Box5
         </div>
         <div class="box b7">
-            Box6
+            Footer
         </div>
         <div class="box b8">
-            Box7
+            Nav
         </div>
     </div>
 
